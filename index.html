@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game JUDI Agas 777</title>
+    <title>Permainan Tebak Angka</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
+            background: #f4f4f4;
             padding: 20px;
-            background: #f9f9f9;
             text-align: center;
         }
         h1 {
             color: #4CAF50;
         }
-        .numbers {
-            font-size: 24px;
-            margin: 20px 0;
+        input[type="number"] {
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background: #fff;
+            width: 50px;
+            font-size: 16px;
+            margin-right: 10px;
         }
         button {
             padding: 10px 20px;
@@ -43,24 +40,27 @@
     </style>
 </head>
 <body>
-    <h1>Game JUDI Agas</h1>
-    <div class="numbers" id="numbers">- - -</div>
-    <button onclick="generateNumbers()">Dapatkan 3 Nomor</button>
+    <h1>Permainan Tebak Angka</h1>
+    <p>Tebak angka antara 1 hingga 10:</p>
+    <input type="number" id="guess" min="1" max="10">
+    <button onclick="checkGuess()">Tebak</button>
+
     <div class="result" id="result"></div>
 
     <script>
-        function generateNumbers() {
-            const numbers = [];
-            for (let i = 0; i < 3; i++) {
-                numbers.push(Math.floor(Math.random() * 10)); // Angka 0-9
-            }
-            document.getElementById('numbers').textContent = numbers.join(' - ');
+        let randomNumber = Math.floor(Math.random() * 10) + 1;
 
-            // Cek apakah semua angka sama
-            if (numbers[0] === numbers[1] && numbers[1] === numbers[2]) {
-                document.getElementById('result').textContent = 'Selamat! Anda menang!';
+        function checkGuess() {
+            const userGuess = parseInt(document.getElementById('guess').value);
+            const resultDiv = document.getElementById('result');
+
+            if (userGuess < 1 || userGuess > 10 || isNaN(userGuess)) {
+                resultDiv.textContent = 'Masukkan angka yang valid (1-10).';
+            } else if (userGuess === randomNumber) {
+                resultDiv.textContent = 'Selamat! Anda menebak angka yang benar: ' + randomNumber;
             } else {
-                document.getElementById('result').textContent = 'Coba lagi!';
+                resultDiv.textContent = 'Salah! Angka yang benar adalah: ' + randomNumber;
+                randomNumber = Math.floor(Math.random() * 10) + 1; // Generate angka baru
             }
         }
     </script>
