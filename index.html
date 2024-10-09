@@ -3,35 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webside Tama Ball</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Halaman Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>Selamat Datang di Situs Kami</h1>
         <nav>
-            <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Produk</a></li>
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Kontak</a></li>
-            </ul>
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#services">Layanan</a>
+            <a href="#contact">Kontak</a>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Selamat Datang di Website Saya!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="container">
+        <section id="home">
+            <h2>Beranda</h2>
+            <p>Ini adalah contoh halaman web profesional dengan struktur yang jelas dan desain yang sederhana.</p>
         </section>
-        <section>
-            <h2>Produk Unggulan</h2>
-            </section>
-    </main>
+
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah perusahaan yang berkomitmen untuk memberikan layanan terbaik kepada pelanggan kami.</p>
+        </section>
+
+        <section id="services">
+            <h2>Layanan Kami</h2>
+            <ul>
+                <li>Layanan 1</li>
+                <li>Layanan 2</li>
+                <li>Layanan 3</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Kontak</h2>
+            <p>Email: info@contoh.com</p>
+            <p>Telepon: 0123-456789</p>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; Webside Tama Ball</p>
+        <p>&copy; 2024 Perusahaan Kami. Semua Hak Dilindungi.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
