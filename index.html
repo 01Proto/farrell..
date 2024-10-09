@@ -3,100 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Judi Agas 3 Nomor</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Game JUDI Agas 777</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 10px 0;
+            padding: 20px;
+            background: #f9f9f9;
             text-align: center;
         }
-        nav {
+        h1 {
+            color: #4CAF50;
+        }
+        .numbers {
+            font-size: 24px;
             margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        section {
-            margin: 20px 0;
-            padding: 20px;
+            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            background: #f9f9f9;
+            background: #fff;
         }
-        footer {
-            background: #333;
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #4CAF50;
             color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #d9534f;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Selamat Datang di Judi Agas 3 Nomor</h1>
-        <nav>
-            <a href="#about">Tentang</a>
-            <a href="#how-to-play">Cara Bermain</a>
-            <a href="#tips">Tips dan Trik</a>
-            <a href="#contact">Kontak</a>
-        </nav>
-    </header>
+    <h1>Game JUDI Agas</h1>
+    <div class="numbers" id="numbers">- - -</div>
+    <button onclick="generateNumbers()">Dapatkan 3 Nomor</button>
+    <div class="result" id="result"></div>
 
-    <div class="container">
-        <section id="about">
-            <h2>Tentang Judi 3 Nomor</h2>
-            <p>Judi 3 nomor adalah permainan yang populer di mana pemain memilih tiga angka dari sekumpulan angka. Jika angka yang dipilih cocok dengan angka yang ditarik, pemain menang.</p>
-        </section>
+    <script>
+        function generateNumbers() {
+            const numbers = [];
+            for (let i = 0; i < 3; i++) {
+                numbers.push(Math.floor(Math.random() * 10)); // Angka 0-9
+            }
+            document.getElementById('numbers').textContent = numbers.join(' - ');
 
-        <section id="how-to-play">
-            <h2>Cara Bermain</h2>
-            <ol>
-                <li>Pilih tiga angka dari 0 hingga 9.</li>
-                <li>Pasang taruhan sesuai dengan angka yang dipilih.</li>
-                <li>Tunggu hasil pengundian angka.</li>
-                <li>Jika angka yang dipilih cocok dengan angka yang ditarik, Anda menang!</li>
-            </ol>
-        </section>
-
-        <section id="tips">
-            <h2>Tips dan Trik</h2>
-            <ul>
-                <li>Pelajari pola angka yang sering muncul.</li>
-                <li>Atur anggaran untuk taruhan Anda.</li>
-                <li>Jangan terlalu sering mengganti angka yang dipilih.</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Kontak</h2>
-            <p>Email: agasbandarjudi@judi3nomor.com</p>
-            <p>Telepon: 0123-456789</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Judi 3 Nomor. Semua Hak Dilindungi.</p>
-    </footer>
+            // Cek apakah semua angka sama
+            if (numbers[0] === numbers[1] && numbers[1] === numbers[2]) {
+                document.getElementById('result').textContent = 'Selamat! Anda menang!';
+            } else {
+                document.getElementById('result').textContent = 'Coba lagi!';
+            }
+        }
+    </script>
 </body>
 </html>
