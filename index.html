@@ -4,56 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AgasZone - Mainkan Game Seru Buatan Agas!</title>
+    <title>Farrell Khultum - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>AgasZone</h1>
+                <h1>Farrell Khultum</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h2>Welcome to AgasZone</h2>
-            <p>Discover the most exciting and engaging games right here!</p>
-            <a href="#" class="play-btn">Play Now</a>
+            <h2>Welcome to My World</h2>
+            <p>Discover more about me, my work, and my journey.</p>
         </div>
     </section>
 
-    <section class="games-list">
-        <h2>Our Popular Games</h2>
-        <div class="games">
-            <div class="game-card">
-                <img src="game1.jpg" alt="Game 1">
-                <h3>Adventure Quest</h3>
-                <p>An exciting adventure game with breathtaking landscapes.</p>
+    <section id="about" class="about-section">
+        <h2>About Farrell Khultum</h2>
+        <p>Hello! I’m Farrell Khultum, a passionate [profession]. My journey has been filled with amazing projects, creative breakthroughs, and constant learning. I love exploring new ideas and bringing them to life through my skills.</p>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>A brief description of the project. Showcasing creativity and skill in [field].</p>
             </div>
-            <div class="game-card">
-                <img src="game2.jpg" alt="Game 2">
-                <h3>Space Wars</h3>
-                <p>Engage in epic space battles and conquer the universe.</p>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>A brief description of another project.</p>
             </div>
-            <div class="game-card">
-                <img src="game3.jpg" alt="Game 3">
-                <h3>Puzzle Master</h3>
-                <p>Test your wits with challenging puzzles and riddles.</p>
+            <div class="portfolio-item">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Another example of work done by Farrell Khultum.</p>
             </div>
         </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations or inquiries!</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 AgasZone. All rights reserved.</p>
+        <p>&copy; 2024 Farrell Khultum. All rights reserved.</p>
     </footer>
 </body>
 </html>
