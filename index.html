@@ -1,68 +1,59 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Permainan Tebak Angka</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        input[type="number"] {
-            padding: 10px;
-            width: 50px;
-            font-size: 16px;
-            margin-right: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #45a049;
-        }
-        .result {
-            margin-top: 20px;
-            font-size: 20px;
-            color: #d9534f;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AgasZone - Mainkan Game Seru Buatan Agas!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Permainan Tebak Angka</h1>
-    <p>Tebak angka antara 1 hingga 10:</p>
-    <input type="number" id="guess" min="1" max="10">
-    <button onclick="checkGuess()">Tebak</button>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>AgasZone</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="result" id="result"></div>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to AgasZone</h2>
+            <p>Discover the most exciting and engaging games right here!</p>
+            <a href="#" class="play-btn">Play Now</a>
+        </div>
+    </section>
 
-    <script>
-        let randomNumber = Math.floor(Math.random() * 10) + 1;
+    <section class="games-list">
+        <h2>Our Popular Games</h2>
+        <div class="games">
+            <div class="game-card">
+                <img src="game1.jpg" alt="Game 1">
+                <h3>Adventure Quest</h3>
+                <p>An exciting adventure game with breathtaking landscapes.</p>
+            </div>
+            <div class="game-card">
+                <img src="game2.jpg" alt="Game 2">
+                <h3>Space Wars</h3>
+                <p>Engage in epic space battles and conquer the universe.</p>
+            </div>
+            <div class="game-card">
+                <img src="game3.jpg" alt="Game 3">
+                <h3>Puzzle Master</h3>
+                <p>Test your wits with challenging puzzles and riddles.</p>
+            </div>
+        </div>
+    </section>
 
-        function checkGuess() {
-            const userGuess = parseInt(document.getElementById('guess').value);
-            const resultDiv = document.getElementById('result');
-
-            if (userGuess < 1 || userGuess > 10 || isNaN(userGuess)) {
-                resultDiv.textContent = 'Masukkan angka yang valid (1-10).';
-            } else if (userGuess === randomNumber) {
-                resultDiv.textContent = 'Selamat! Anda menebak angka yang benar: ' + randomNumber;
-            } else {
-                resultDiv.textContent = 'Salah! Angka yang benar adalah: ' + randomNumber;
-                randomNumber = Math.floor(Math.random() * 10) + 1; // Generate angka baru
-            }
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 AgasZone. All rights reserved.</p>
+    </footer>
 </body>
 </html>
