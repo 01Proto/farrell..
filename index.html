@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Selamat Datang di Sekolah Maju</title>
+    <title>Mario World - Game Petualangan</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #87CEEB;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         header {
-            background-color: #007BFF;
+            background-color: #ff4500;
             color: white;
             text-align: center;
             padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
         }
         nav {
-            background-color: #0056b3;
+            background-color: #008000;
             padding: 10px 0;
+            text-align: center;
         }
         nav ul {
-            list-style-type: none;
+            list-style: none;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         nav ul li {
             display: inline;
@@ -36,89 +38,108 @@
             color: white;
             text-decoration: none;
             font-size: 18px;
+            font-weight: bold;
         }
         section {
             padding: 20px;
             text-align: center;
         }
+        .hero {
+            background-image: url('https://example.com/mario-background.jpg'); /* Ganti dengan gambar yang relevan */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
         .content {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 20px auto;
+            text-align: left;
         }
         .about {
-            background-color: #e0f7fa;
             padding: 20px;
+            background-color: #f8f9fa;
             border-radius: 10px;
         }
         .about h2 {
-            color: #007BFF;
+            color: #ff4500;
         }
-        .programs {
+        .about p {
+            font-size: 18px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
             margin-top: 20px;
         }
-        .programs ul {
-            list-style-type: none;
-            padding: 0;
+        .features .feature {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
         }
-        .programs ul li {
-            background-color: #f8f9fa;
-            margin: 10px 0;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .features .feature h3 {
+            color: #008000;
         }
         footer {
-            background-color: #007BFF;
+            background-color: #ff4500;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Selamat Datang di Sekolah Maju</h1>
-    <p>Pendidikan Berkualitas untuk Masa Depan Gemilang</p>
+    Selamat Datang di Mario World
 </header>
 
 <nav>
     <ul>
-        <li><a href="#tentang">Tentang Kami</a></li>
-        <li><a href="#program">Program Pendidikan</a></li>
+        <li><a href="#tentang">Tentang Game</a></li>
+        <li><a href="#fitur">Fitur Game</a></li>
         <li><a href="#kontak">Kontak</a></li>
     </ul>
 </nav>
 
-<section id="tentang" class="content">
-    <div class="about">
-        <h2>Tentang Sekolah Kami</h2>
-        <p>Sekolah Maju adalah sekolah yang berkomitmen untuk memberikan pendidikan terbaik bagi generasi penerus bangsa. Kami percaya bahwa setiap anak memiliki potensi luar biasa, dan tugas kami adalah membantu mereka meraih potensi tersebut melalui pendidikan yang berkualitas.</p>
+<section class="hero">
+    Petualangan Mario Dimulai!
+</section>
+
+<section id="tentang" class="content about">
+    <h2>Tentang Game Mario</h2>
+    <p>Mario adalah salah satu karakter video game paling ikonik di dunia. Dalam game ini, Mario berpetualang melintasi berbagai dunia penuh rintangan untuk menyelamatkan Putri Peach dari cengkeraman Bowser. Dengan lompatan, power-up, dan berbagai musuh yang harus dihadapi, Mario World memberikan pengalaman permainan yang tak terlupakan.</p>
+</section>
+
+<section id="fitur" class="content features">
+    <div class="feature">
+        <h3>Level yang Menantang</h3>
+        <p>Hadapi berbagai tantangan di setiap level yang dirancang untuk menguji keterampilan Anda.</p>
+    </div>
+    <div class="feature">
+        <h3>Power-Up Keren</h3>
+        <p>Gunakan power-up seperti jamur, bunga api, dan bintang untuk membantu Mario dalam petualangannya.</p>
+    </div>
+    <div class="feature">
+        <h3>Musuh yang Menarik</h3>
+        <p>Dari Goombas hingga Bowser, setiap musuh memiliki keunikan tersendiri yang membuat permainan semakin seru.</p>
     </div>
 </section>
 
-<section id="program" class="content programs">
-    <h2>Program Pendidikan</h2>
-    <ul>
-        <li>
-            <h3>Program Sains dan Teknologi</h3>
-            <p>Mengembangkan kemampuan siswa dalam ilmu pengetahuan dan teknologi melalui pembelajaran interaktif dan eksperimen praktis.</p>
-        </li>
-        <li>
-            <h3>Program Seni dan Kreativitas</h3>
-            <p>Meningkatkan kreativitas siswa dalam seni visual, musik, dan teater, membantu mereka mengekspresikan diri dengan lebih baik.</p>
-        </li>
-        <li>
-            <h3>Program Olahraga</h3>
-            <p>Menanamkan gaya hidup sehat dan semangat olahraga dengan berbagai kegiatan fisik dan kompetisi antar sekolah.</p>
-        </li>
-    </ul>
-</section>
-
 <footer id="kontak">
-    <p>Kontak Kami: (021) 123-4567 | Email: info@sekolahmaju.sch.id</p>
-    <p>&copy; 2024 Sekolah Maju. Semua hak dilindungi undang-undang.</p>
+    <p>Kontak Kami: mario@gameworld.com | Telepon: (021) 123-4567</p>
+    <p>&copy; 2024 Mario World. Semua hak dilindungi undang-undang.</p>
 </footer>
 
 </body>
