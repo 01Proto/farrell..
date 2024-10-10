@@ -1,78 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Command Dani Terminal</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selamat Datang di Sekolah Maju</title>
     <style>
         body {
-            background-color: black;
-            color: lime;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 16px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
             padding: 20px;
+            text-align: center;
         }
-        #terminal {
-            width: 100%;
-            height: 80vh;
-            background-color: black;
-            color: lime;
-            padding: 10px;
-            border: 2px solid lime;
-            overflow-y: scroll;
-            white-space: pre-wrap;
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
         }
-        .input-line {
-            display: flex;
+        .about {
+            background-color: #e0f7fa;
+            padding: 20px;
+            border-radius: 10px;
         }
-        .prompt {
-            margin-right: 5px;
+        .about h2 {
+            color: #007BFF;
         }
-        input {
-            background-color: black;
-            color: lime;
-            border: none;
-            flex: 1;
-            outline: none;
+        .programs {
+            margin-top: 20px;
         }
-        .hidden {
-            display: none;
+        .programs ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .programs ul li {
+            background-color: #f8f9fa;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Command Dani Terminal</h1>
-    <div id="terminal"></div>
-    <div class="input-line">
-        <span class="prompt">Dani0112399@gmail.com:~$</span>
-        <input type="text" id="userInput" autofocus>
+
+<header>
+    <h1>Selamat Datang di Sekolah Maju</h1>
+    <p>Pendidikan Berkualitas untuk Masa Depan Gemilang</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#program">Program Pendidikan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<section id="tentang" class="content">
+    <div class="about">
+        <h2>Tentang Sekolah Kami</h2>
+        <p>Sekolah Maju adalah sekolah yang berkomitmen untuk memberikan pendidikan terbaik bagi generasi penerus bangsa. Kami percaya bahwa setiap anak memiliki potensi luar biasa, dan tugas kami adalah membantu mereka meraih potensi tersebut melalui pendidikan yang berkualitas.</p>
     </div>
+</section>
 
-    <script>
-        const terminal = document.getElementById('terminal');
-        const userInput = document.getElementById('userInput');
-        const fakeCommands = [
-            'Scanning network...',
-            'Bypassing firewall...',
-            'Accessing mainframe...',
-            'Downloading data...',
-            'Hack complete! Data secured!'
-        ];
+<section id="program" class="content programs">
+    <h2>Program Pendidikan</h2>
+    <ul>
+        <li>
+            <h3>Program Sains dan Teknologi</h3>
+            <p>Mengembangkan kemampuan siswa dalam ilmu pengetahuan dan teknologi melalui pembelajaran interaktif dan eksperimen praktis.</p>
+        </li>
+        <li>
+            <h3>Program Seni dan Kreativitas</h3>
+            <p>Meningkatkan kreativitas siswa dalam seni visual, musik, dan teater, membantu mereka mengekspresikan diri dengan lebih baik.</p>
+        </li>
+        <li>
+            <h3>Program Olahraga</h3>
+            <p>Menanamkan gaya hidup sehat dan semangat olahraga dengan berbagai kegiatan fisik dan kompetisi antar sekolah.</p>
+        </li>
+    </ul>
+</section>
 
-        userInput.addEventListener('keydown', function (event) {
-            if (event.key === 'Enter') {
-                const inputText = userInput.value;
-                terminal.innerHTML += `<div>Dani0112399@gmail.com:~$ ${inputText}</div>`;
-                userInput.value = '';
+<footer id="kontak">
+    <p>Kontak Kami: (021) 123-4567 | Email: info@sekolahmaju.sch.id</p>
+    <p>&copy; 2024 Sekolah Maju. Semua hak dilindungi undang-undang.</p>
+</footer>
 
-                setTimeout(() => {
-                    const randomIndex = Math.floor(Math.random() * Commands.length);
-                    terminal.innerHTML += `<div>${Commands[randomIndex]}</div>`;
-                    terminal.scrollTop = terminal.scrollHeight;
-                }, 1000);
-            }
-        });
-    </script>
 </body>
 </html>
