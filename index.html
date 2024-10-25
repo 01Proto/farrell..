@@ -1,146 +1,86 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mario World - Game Petualangan</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #87CEEB;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ff4500;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav {
-            background-color: #008000;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        .hero {
-            background-image: url('https://example.com/mario-background.jpg'); /* Ganti dengan gambar yang relevan */
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 36px;
-            font-weight: bold;
-        }
-        .content {
-            max-width: 900px;
-            margin: 20px auto;
-            text-align: left;
-        }
-        .about {
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-        }
-        .about h2 {
-            color: #ff4500;
-        }
-        .about p {
-            font-size: 18px;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .features .feature {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 30%;
-        }
-        .features .feature h3 {
-            color: #008000;
-        }
-        footer {
-            background-color: #ff4500;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    Selamat Datang di Mario World
-</header>
-
-<nav>
-    <ul>
-        <li><a href="#tentang">Tentang Game</a></li>
-        <li><a href="#fitur">Fitur Game</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-    </ul>
-</nav>
-
-<section class="hero">
-    Petualangan Mario Dimulai!
-</section>
-
-<section id="tentang" class="content about">
-    <h2>Tentang Game Mario</h2>
-    <p>Mario adalah salah satu karakter video game paling ikonik di dunia. Dalam game ini, Mario berpetualang melintasi berbagai dunia penuh rintangan untuk menyelamatkan Putri Peach dari cengkeraman Bowser. Dengan lompatan, power-up, dan berbagai musuh yang harus dihadapi, Mario World memberikan pengalaman permainan yang tak terlupakan.</p>
-</section>
-
-<section id="fitur" class="content features">
-    <div class="feature">
-        <h3>Level yang Menantang</h3>
-        <p>Hadapi berbagai tantangan di setiap level yang dirancang untuk menguji keterampilan Anda.</p>
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-800 text-white">
+  <div class="max-w-4xl mx-auto p-4">
+   <!-- Profile Header -->
+   <div class="flex items-center space-x-4">
+    <img alt="Profile picture of a character with orange hair and a smiley face" class="rounded-full w-20 h-20" height="100" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A7C42C30CA6D24027DE539BE3D85FB86-Png/150/150/AvatarHeadshot/Webp/noFilter" width="100"/>
+    <div>
+     <h1 class="text-2xl font-bold">
+      Roger_xdc
+     </h1>
+     <p class="text-gray-400">
+      @ROGER_XDC
+     </p>
+     <div class="flex space-x-2 text-gray-400">
+      <span>
+       39 Friends
+      </span>
+      <span>
+       2 Followers
+      </span>
+      <span>
+       1 Following
+      </span>
+     </div>
     </div>
-    <div class="feature">
-        <h3>Power-Up Keren</h3>
-        <p>Gunakan power-up seperti jamur, bunga api, dan bintang untuk membantu Mario dalam petualangannya.</p>
+    <div class="ml-auto flex space-x-2">
+     <button class="bg-white text-black px-4 py-2 rounded">
+      Chat
+     </button>
+     <button class="bg-red-600 px-4 py-2 rounded">
+      Unfriend
+     </button>
     </div>
-    <div class="feature">
-        <h3>Musuh yang Menarik</h3>
-        <p>Dari Goombas hingga Bowser, setiap musuh memiliki keunikan tersendiri yang membuat permainan semakin seru.</p>
+   </div>
+   <!-- Navigation Tabs -->
+   <div class="mt-4 border-b border-gray-600">
+    <nav class="flex space-x-4">
+     <a class="text-white border-b-2 border-white pb-2" href="#">
+      About
+     </a>
+     <a class="text-gray-400 pb-2" href="#">
+      Creations
+     </a>
+    </nav>
+   </div>
+   <!-- About Section -->
+   <div class="mt-4">
+    <h2 class="text-xl font-bold">
+     About
+    </h2>
+    <p class="mt-2 border-t border-gray-600 pt-2">
+    </p>
+   </div>
+   <!-- Currently Wearing Section -->
+   <div class="mt-8">
+    <h2 class="text-xl font-bold">
+     Currently Wearing
+    </h2>
+    <div class="mt-4 flex">
+     <div class="bg-gray-700 p-4 rounded-lg">
+      <img alt="3D model of a character with orange hair, black jacket, blue shirt, and black pants" class="w-48 h-48" height="200" src="https://storage.googleapis.com/a1aa/image/o7xU50gFf9x2HqEOlGDsihDHWDB5IhpMKe0eec1Vs4uxOXpOB.jpg" width="200"/>
+      <button class="bg-white text-black px-2 py-1 mt-2 rounded">
+       3D
+      </button>
+     </div>
+     <div class="ml-4 grid grid-cols-3 gap-2">
+      <img alt="Orange hair item" class="w-16 h-16 rounded-lg" height="50" src="https://storage.googleapis.com/a1aa/image/opWDw9sUIPL3CxfefkJRjv93oEMeigcPRMzaoWaKnA6rOXpOB.jpg" width="50"/>
+      <img alt="Smiley face head item" class="w-16 h-16 rounded-lg" height="50" src="https://storage.googleapis.com/a1aa/image/zvgfSaTgpAVYFa2pFqMlHxYj5khbfeQnNo4U1ZAmjfomOXpOB.jpg" width="50"/>
+      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://storage.googleapis.com/a1aa/image/481wSeIlhLV1fE5uYkSXVIy05mSdA9FBlFS61k6YScfeOXpOB.jpg" width="50"/>
+      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://storage.googleapis.com/a1aa/image/481wSeIlhLV1fE5uYkSXVIy05mSdA9FBlFS61k6YScfeOXpOB.jpg" width="50"/>
+      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://storage.googleapis.com/a1aa/image/481wSeIlhLV1fE5uYkSXVIy05mSdA9FBlFS61k6YScfeOXpOB.jpg" width="50"/>
+      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://storage.googleapis.com/a1aa/image/481wSeIlhLV1fE5uYkSXVIy05mSdA9FBlFS61k6YScfeOXpOB.jpg" width="50"/>
+      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://storage.googleapis.com/a1aa/image/481wSeIlhLV1fE5uYkSXVIy05mSdA9FBlFS61k6YScfeOXpOB.jpg" width="50"/>
+      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://storage.googleapis.com/a1aa/image/481wSeIlhLV1fE5uYkSXVIy05mSdA9FBlFS61k6YScfeOXpOB.jpg" width="50"/>
+      <img alt="Smiley face head item" class="w-16 h-16 rounded-lg" height="50" src="https://storage.googleapis.com/a1aa/image/zvgfSaTgpAVYFa2pFqMlHxYj5khbfeQnNo4U1ZAmjfomOXpOB.jpg" width="50"/>
+     </div>
     </div>
-</section>
-
-<footer id="kontak">
-    <p>Kontak Kami: mario@gameworld.com | Telepon: (021) 123-4567</p>
-    <p>&copy; 2024 Mario World. Semua hak dilindungi undang-undang.</p>
-</footer>
-
-</body>
+   </div>
+  </div>
+ </body>
 </html>
