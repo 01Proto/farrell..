@@ -1,84 +1,315 @@
 <html>
  <head>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <title>
+   Item Shop
+  </title>
+  <style>
+   body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .item {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+        }
+        .item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+        .item-name {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .item-price {
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+  </style>
  </head>
- <body class="bg-gray-800 text-white">
-  <div class="max-w-4xl mx-auto p-4">
-   <!-- Profile Header -->
-   <div class="flex items-center space-x-4">
-    <img alt="Profile picture of a character with orange hair and a smiley face" class="rounded-full w-20 h-20" height="100" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A7C42C30CA6D24027DE539BE3D85FB86-Png/150/150/AvatarHeadshot/Webp/noFilter" width="100"/>
-    <div>
-     <h1 class="text-2xl font-bold">
-      Roger_xdc
-     </h1>
-     <p class="text-gray-400">
-      @ROGER_XDC
-     </p>
-     <div class="flex space-x-2 text-gray-400">
-      <span>
-       1 Friends
-      </span>
-      <span>
-       1M+ Followers
-      </span>
-      <span>
-       1 Following
-      </span>
-     </div>
+ <body>
+  <div class="container">
+   <div class="item">
+    <img alt="ROBLOX Grab Bag" height="100" src="https://tr.rbxcdn.com/180DAY-ad176846693088b877d7cba9a69c45de/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     ROBLOX Grab Bag
     </div>
-    <div class="ml-auto flex space-x-2">
-     <button class="bg-white text-black px-4 py-2 rounded">
-      Chat
-     </button>
-     <button class="bg-red-600 px-4 py-2 rounded">
-      Unfriend
-     </button>
+    <div class="item-price">
+     100
     </div>
    </div>
-   <!-- Navigation Tabs -->
-   <div class="mt-4 border-b border-gray-600">
-    <nav class="flex space-x-4">
-     <a class="text-white border-b-2 border-white pb-2" href="#">
-      About
-     </a>
-     <a class="text-gray-400 pb-2" href="#">
-      Creations
-     </a>
-    </nav>
+   <div class="item">
+    <img alt="Hot Chocolate" height="100" src="https://tr.rbxcdn.com/180DAY-39376d076cc4e66007608cd9af500b19/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Hot Chocolate
+    </div>
+    <div class="item-price">
+     125
+    </div>
    </div>
-   <!-- About Section -->
-   <div class="mt-4">
-    <h2 class="text-xl font-bold">
-     agas😒😒😒
-    </h2>
-    <p class="mt-2 border-t border-gray-600 pt-2">
-    </p>
+   <div class="item">
+    <img alt="Skeleton Scythe" height="100" src="https://tr.rbxcdn.com/180DAY-ef421c87acc850508a28eb270fcaa4c6/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Skeleton Scythe
+    </div>
+    <div class="item-price">
+     600
+    </div>
    </div>
-   <!-- Currently Wearing Section -->
-   <div class="mt-8">
-    <h2 class="text-xl font-bold">
-     Currently Wearing
-    </h2>
-    <div class="mt-4 flex">
-     <div class="bg-gray-700 p-4 rounded-lg">
-      <img alt="3D model of a character with orange hair, black jacket, blue shirt, and black pants" class="w-48 h-48" height="200" src="https://tr.rbxcdn.com/30DAY-Avatar-A7C42C30CA6D24027DE539BE3D85FB86-Png/352/352/Avatar/Webp/noFilter" width="200"/>
-      <button class="bg-white text-black px-2 py-1 mt-2 rounded">
-       3D
-      </button>
-     </div>
-     <div class="ml-4 grid grid-cols-3 gap-2">
-      <img alt="Orange hair item" class="w-16 h-16 rounded-lg" height="50" src="https://tr.rbxcdn.com/180DAY-89ec9046630a077d02a0cb7227c40a6e/150/150/Hat/Webp/noFilter" width="50"/>
-      <img alt="Smiley face head item" class="w-16 h-16 rounded-lg" height="50" src="https://tr.rbxcdn.com/180DAY-675fc5d7209095fc2845d98edfcfaa5e/150/150/Head/Webp/noFilter" width="50"/>
-      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://tr.rbxcdn.com/180DAY-4ee31b35181843b62e8b9efb32b83290/150/150/Torso/Webp/noFilter" width="50"/>
-      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://tr.rbxcdn.com/180DAY-f3c3709429d45377f8a9eff2abfe8f2d/150/150/RightArm/Webp/noFilter" width="50"/>
-      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://tr.rbxcdn.com/180DAY-559f8e68a728a2bf5a2bcb8b5cb939db/150/150/LeftArm/Webp/noFilter" width="50"/>
-      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://tr.rbxcdn.com/180DAY-9f13fcccad8d8e0555bad2e512dbf52a/150/150/LeftLeg/Webp/noFilter" width="50"/>
-      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://tr.rbxcdn.com/180DAY-670a0568bf8a5232bac57222ec97f17b/150/150/RightLeg/Webp/noFilter" width="50"/>
-      <img alt="Blue checkered shirt item" class="w-16 h-16 rounded-lg" height="50" src="https://tr.rbxcdn.com/180DAY-61d28990c4169f15c9d4d2455dd4501f/150/150/Face/Webp/noFilter" width="50"/>
-      <img alt="Smiley face head item" class="w-16 h-16 rounded-lg" height="50" src="https://tr.rbxcdn.com/180DAY-0f904d9e075b38d760914cffa331b299/150/150/Shirt/Webp/noFilter" width="50"/>
-     </div>
+   <div class="item">
+    <img alt="School's Out Launcher" height="100" src="https://tr.rbxcdn.com/180DAY-ddad6ce822b871af9622b72bd410f9e9/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     School's Out Launcher
+    </div>
+    <div class="item-price">
+     100
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Ice Dragon Slayer" height="100" src="https://tr.rbxcdn.com/180DAY-d7693fb87b9751f64d6497820a9f7cd5/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Ice Dragon Slayer
+    </div>
+    <div class="item-price">
+     350
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Wooden Club" height="100" src="https://tr.rbxcdn.com/180DAY-2c2a08cef7420f63dd9469bff7943b92/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Wooden Club
+    </div>
+    <div class="item-price">
+     100
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Turkey Leg" height="100" src="https://tr.rbxcdn.com/180DAY-34ec351e26c137463be44d9299ea03d1/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Turkey Leg
+    </div>
+    <div class="item-price">
+     75
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Newtrat's Tuskinator" height="100" src="https://tr.rbxcdn.com/180DAY-59e24e0f5a1bd41ff2e08375734f01ae/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Newtrat's Tuskinator
+    </div>
+    <div class="item-price">
+     250
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Gravity Coil" height="100" src="https://tr.rbxcdn.com/180DAY-5a087350499e826bfd11e06a312b8f45/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Gravity Coil
+    </div>
+    <div class="item-price">
+     250
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Danger Dagger" height="100" src="https://tr.rbxcdn.com/180DAY-1f121137b1ced7c1b827d24d94d3dc99/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Danger Dagger
+    </div>
+    <div class="item-price">
+     125
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Christmas Tree Launcher" height="100" src="https://tr.rbxcdn.com/180DAY-cae9ba6ca857339fc492acd21696dd50/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Christmas Tree Launcher
+    </div>
+    <div class="item-price">
+     200
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Elven Blade of Glory" height="100" src="https://tr.rbxcdn.com/180DAY-1bd295fad02d2a69e671acf0357731eb/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Elven Blade of Glory
+    </div>
+    <div class="item-price">
+     80
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Flashbang" height="100" src="https://tr.rbxcdn.com/180DAY-278d6dd51ecda6d2373fe1c430bc28d2/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Flashbang
+    </div>
+    <div class="item-price">
+     45
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Bamboo Katana" height="100" src="https://tr.rbxcdn.com/180DAY-c20c7226ffbbe4fe014af9bcf051a5f8/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Bamboo Katana
+    </div>
+    <div class="item-price">
+     100
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Scepter of Pharoahs" height="100" src="https://tr.rbxcdn.com/180DAY-31b6c8d774cf0d68a33d9c3906c7609a/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Scepter of Pharoahs
+    </div>
+    <div class="item-price">
+     135
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Police Baton" height="100" src="https://tr.rbxcdn.com/180DAY-82ee30141e0abf4cd9e99e8a2b8c9e82/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Police Baton
+    </div>
+    <div class="item-price">
+     90
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Katana" height="100" src="https://tr.rbxcdn.com/180DAY-43842ff3ad988c4c31904da47245830b/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Katana
+    </div>
+    <div class="item-price">
+     250
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Chimp Friend" height="100" src="https://tr.rbxcdn.com/180DAY-e8a14b2b734dd739d6bde984708db4d2/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Chimp Friend
+    </div>
+    <div class="item-price">
+     150
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Snowball" height="100" src="https://tr.rbxcdn.com/180DAY-f42dc8d0c618864e492a86a7e136a625/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Snowball
+    </div>
+    <div class="item-price">
+     50
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Teddy Bloxpin" height="100" src="https://tr.rbxcdn.com/180DAY-470f36245bb9be98dcd6c819d57e77ec/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Teddy Bloxpin
+    </div>
+    <div class="item-price">
+     100
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Chocolate Milk" height="100" src="https://tr.rbxcdn.com/180DAY-84f2ad53e06d282c88dc2343203093c0/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Panda Friend
+    </div>
+    <div class="item-price">
+     200
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Orc Blade" height="100" src="https://tr.rbxcdn.com/180DAY-710e8b772bef30e7336b25c084860cb7/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Orc Blade
+    </div>
+    <div class="item-price">
+     150
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Towering Inferno Sword" height="100" src="https://tr.rbxcdn.com/180DAY-8c85cfb646c79bc8200a7f8f938c0624/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Towering Inferno Sword
+    </div>
+    <div class="item-price">
+     675
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Frozen Halberd" height="100" src="https://tr.rbxcdn.com/180DAY-dc559a69d9664069988d370361b25b58/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Frozen Halberd
+    </div>
+    <div class="item-price">
+     1000
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Frying Pan" height="100" src="https://tr.rbxcdn.com/180DAY-3b3ecab8357fca777bd3b281dd718903/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Frying Pan
+    </div>
+    <div class="item-price">
+     115
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Mr. Whiskers" height="100" src="https://tr.rbxcdn.com/180DAY-654c8aaf58bed9b0b66619f2bf4a13b0/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Mr. Whiskers
+    </div>
+    <div class="item-price">
+     250
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Adurite Katana" height="100" src="https://tr.rbxcdn.com/180DAY-f94bc0c664ac6be9c5e6cf8c46f6e8e2/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Adurite Katana
+    </div>
+    <div class="item-price">
+     750
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Frying Pan" height="100" src="https://tr.rbxcdn.com/180DAY-3b3ecab8357fca777bd3b281dd718903/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Frying Pan
+    </div>
+    <div class="item-price">
+     115
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Mr. Whiskers" height="100" src="https://tr.rbxcdn.com/180DAY-654c8aaf58bed9b0b66619f2bf4a13b0/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Mr. Whiskers
+    </div>
+    <div class="item-price">
+     250
+    </div>
+   </div>
+   <div class="item">
+    <img alt="Witches Brew" height="100" src="https://tr.rbxcdn.com/180DAY-0c8652841b77bbee2ffee7e63ed51794/150/150/Gear/Webp/noFilter" width="100"/>
+    <div class="item-name">
+     Witches Brew
+    </div>
+    <div class="item-price">
+     75
     </div>
    </div>
   </div>
